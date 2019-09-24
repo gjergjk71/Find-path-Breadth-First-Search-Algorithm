@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/board.css"/>
+    </head>
+    <body>
+        <center>
+            <h1>Breadth-first Search</h1>
+            <h4>
+                <a 
+                    target="_blank"
+                    href="https://thecodingaddict.wordpress.com/2019/09/24/find-path-breadth-first-search-algorithm/">https://thecodingaddict.wordpress.com/2019/09/24/find-path-breadth-first-search-algorithm/
+                </a>
+            </h4>
+            <form id="settingsForm">
+                Grid size: <input type="number" id="grid_size" value="10" />
+                (Blue) Starting position (eg.[0,0]): <input id="start_pos" value="[0,0]" />
+                (Green) End position (eg.[0,0]): <input id="end_pos" value="[2,7]" />
+                Speed (ms): <input type="number" id="speed" value="10" />
+                <button>Start</button>
+            </form>
+        </center>
+        <table id="table">
+            
+        </table>
+    </body>
+    <script src="js/main.js"></script>
+    <script>
+            document.getElementById("settingsForm").onsubmit(new Event(null));
+    </script>
+</html>
